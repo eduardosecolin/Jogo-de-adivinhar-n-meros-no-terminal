@@ -9,7 +9,9 @@ class AdivinhaNumero
        @numero = SortearNumero.sortear
        @venceu = false
     end
-     
+    
+    cont = 0
+
     def tentar_advinhar(numero = 0)
      if numero == @numero
        @venceu = true
@@ -18,6 +20,6 @@ class AdivinhaNumero
        return "numero informado muito alto"
      else
        return "numero informado muito baixo"
-     end
+     end   
     end
    end

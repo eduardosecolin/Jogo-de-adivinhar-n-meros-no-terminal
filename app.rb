@@ -18,6 +18,7 @@ print "\t\t\tQual a sua escolha? = "
 escolha = gets.chomp.to_i
 
 system("cls")
+cont = 0
 
 case escolha
   when 1
@@ -27,7 +28,9 @@ case escolha
         numero = gets.to_i
         system("cls")
         puts jogo.tentar_advinhar(numero) + " -> #{numero}"
+        cont = cont + 1
     end
+    puts "Numero de tentativas < #{cont} >"
   when 2
     system("exit")
     else
